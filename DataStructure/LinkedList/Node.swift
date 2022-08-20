@@ -8,20 +8,23 @@
 import Foundation
 
 /// Nodes have two responsibilities:
-class Node<Value>{
+public class LLNode<T>{
     /// Hold a value
-    var value:Value
+    var value:T
     
-    /// Hold a reference to the next node. A ni lvalue represents the end of the list.
-    var next:Node?
+    /// Hold a reference to the next node. A nil lvalue represents the end of the list.
+    var next:LLNode?
     
-    init(value: Value, next:Node? = nil) {
+    
+    var previous:LLNode?
+    
+    init(value: T, next:LLNode? = nil) {
         self.value = value
         self.next = next
     }
 }
 
-extension Node: CustomStringConvertible {
+extension LLNode: CustomStringConvertible {
   public var description: String {
     guard let next = next else {
       return "\(value)"
