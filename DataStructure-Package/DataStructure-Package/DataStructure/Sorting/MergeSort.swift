@@ -78,7 +78,6 @@ class MergeSort{
         
         return list[0] < list[1] && verifyMergeSort(list: Array(list[1...]))
     }
-
 }
 
 
