@@ -21,12 +21,12 @@ class BTNode<T>{
 class BinaryTree{
     
     
-    func depthFirstSearch(root:BTNode<String>) -> [String]{
+    func depthFirstValues(root:BTNode<String>) -> [String]{
         var stack:[BTNode] = [root]
-        var dfs:[String] = []
+        var dfv:[String] = []
         while stack.count > 0 {
             let current = stack.removeLast()
-            dfs.append(current.value)
+            dfv.append(current.value)
             if let right = current.right{
                 stack.append(right)
             }
@@ -34,16 +34,36 @@ class BinaryTree{
                 stack.append(left)
             }
         }
-        return dfs
+        return dfv
     }
 
     
-    func depthFirstSearchRecursive(root:BTNode<String>?) -> [String]{
+    func depthFirstValuesRecursive(root:BTNode<String>?) -> [String]{
         if root == nil {return []}
-        let left = depthFirstSearchRecursive(root: root?.left)
-        let right = depthFirstSearchRecursive(root: root?.right)
+        let left = depthFirstValuesRecursive(root: root?.left)
+        let right = depthFirstValuesRecursive(root: root?.right)
         
         return [root!.value] + left + right
+    }
+    
+    
+    func breadthFirstValues(root:BTNode<String>) -> [String]{
+        var queue:[BTNode] = [root]
+        var bfv:[String] = []
+        
+        while queue.count > 0 {
+            let current = queue.removeFirst()
+            bfv.append(current.value)
+            
+            if let left = current.left {
+                queue.append(left)
+            }
+            
+            if let right = current.right{
+                queue.append(right)
+            }
+        }
+        return bfv
     }
 }
 

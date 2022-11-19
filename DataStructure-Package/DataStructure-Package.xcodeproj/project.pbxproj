@@ -10,6 +10,7 @@
 		E31E2B0428BE18D9000ACB49 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E2B0328BE18D9000ACB49 /* QuickSort.swift */; };
 		E32B841A292793FD005E016F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B8419292793FD005E016F /* BinaryTree.swift */; };
 		E32B841C29279A78005E016F /* BinaryTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B841B29279A78005E016F /* BinaryTreeTest.swift */; };
+		E32B841F2928CBFD005E016F /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B841E2928CBFD005E016F /* Recursion.swift */; };
 		E397C18028B10B6500E8A074 /* DataStructure_Package.docc in Sources */ = {isa = PBXBuildFile; fileRef = E397C17F28B10B6500E8A074 /* DataStructure_Package.docc */; };
 		E397C18628B10B6600E8A074 /* DataStructure_Package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E397C17B28B10B6500E8A074 /* DataStructure_Package.framework */; };
 		E397C18B28B10B6600E8A074 /* DataStructure_PackageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E397C18A28B10B6600E8A074 /* DataStructure_PackageTests.swift */; };
@@ -37,6 +38,7 @@
 		E31E2B0328BE18D9000ACB49 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		E32B8419292793FD005E016F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		E32B841B29279A78005E016F /* BinaryTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTest.swift; sourceTree = "<group>"; };
+		E32B841E2928CBFD005E016F /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		E397C17B28B10B6500E8A074 /* DataStructure_Package.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructure_Package.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E397C17E28B10B6500E8A074 /* DataStructure_Package.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure_Package.h; sourceTree = "<group>"; };
 		E397C17F28B10B6500E8A074 /* DataStructure_Package.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataStructure_Package.docc; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32B841D2928CBE5005E016F /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				E32B841E2928CBFD005E016F /* Recursion.swift */,
+			);
+			path = Recursion;
+			sourceTree = "<group>";
+		};
 		E397C17128B10B6500E8A074 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		E397C19528B10B8800E8A074 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				E32B841D2928CBE5005E016F /* Recursion */,
 				E397C1A828B6020F00E8A074 /* Tree */,
 				E397C1A128B1337400E8A074 /* Sorting */,
 				E397C19E28B111A800E8A074 /* Searching */,
@@ -279,6 +290,7 @@
 				E397C18028B10B6500E8A074 /* DataStructure_Package.docc in Sources */,
 				E397C19C28B10C2B00E8A074 /* Node.swift in Sources */,
 				E32B841A292793FD005E016F /* BinaryTree.swift in Sources */,
+				E32B841F2928CBFD005E016F /* Recursion.swift in Sources */,
 				E397C1A328B133B900E8A074 /* MergeSort.swift in Sources */,
 				E397C1A728B417D200E8A074 /* LinkedListMergeSort.swift in Sources */,
 				E31E2B0428BE18D9000ACB49 /* QuickSort.swift in Sources */,

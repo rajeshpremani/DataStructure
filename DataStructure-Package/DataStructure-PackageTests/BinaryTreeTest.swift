@@ -11,15 +11,23 @@ import XCTest
 class BinaryTreeTest: XCTestCase {
 
     
-    func testDFS(){
+    func testDFV(){
         let tree = BinaryTree()
-        let root = makeBT()
+        let root = makeBinaryTree()
         
-        XCTAssertEqual(tree.depthFirstSearch(root: root), ["a","b","d","e","c","f"])
-        XCTAssertEqual(tree.depthFirstSearchRecursive(root: root), ["a","b","d","e","c","f"])
+        XCTAssertEqual(tree.depthFirstValues(root: root), ["a","b","d","e","c","f"])
+        XCTAssertEqual(tree.depthFirstValuesRecursive(root: root), ["a","b","d","e","c","f"])
     }
     
-    private func makeBT() -> BTNode<String> {
+    func testBFV(){
+        let tree = BinaryTree()
+        let root = makeBinaryTree()
+        
+        XCTAssertEqual(tree.breadthFirstValues(root: root), ["a","b","c","d","e","f"])
+        
+    }
+    
+    private func makeBinaryTree() -> BTNode<String> {
         let a = BTNode(value: "a")
         let b = BTNode(value: "b")
         let c = BTNode(value: "c")

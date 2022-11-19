@@ -30,4 +30,12 @@ class DataStructure_PackageTests: XCTestCase {
     }
     
     
+    func testRecursing(){
+        let recursion = Recursion()
+        XCTAssertEqual(recursion.decimalToBinart(decimal: 233, result: ""), "11101001")
+        
+        
+        XCTAssertEqual(recursion.sumOfNaturalNumber(value: 5), 15)
+    }
+    
 }
