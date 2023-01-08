@@ -33,9 +33,18 @@ class DataStructure_PackageTests: XCTestCase {
     func testRecursing(){
         let recursion = Recursion()
         XCTAssertEqual(recursion.decimalToBinart(decimal: 233, result: ""), "11101001")
-        
-        
         XCTAssertEqual(recursion.sumOfNaturalNumber(value: 5), 15)
+    }
+    
+    func testBinarySearchRecursion(){
+        let recursion = Recursion()
+        let array = [-1,1,2,3,4,7,8,9,10]
+        XCTAssertEqual(recursion.binarySearch(list: array, left: 0, right: array.count - 1, x: 9), 7)
+    }
+    
+    func testFib(){
+        let recursion = Recursion()
+        XCTAssertEqual(recursion.fib(value: 5), 8)
     }
     
 }

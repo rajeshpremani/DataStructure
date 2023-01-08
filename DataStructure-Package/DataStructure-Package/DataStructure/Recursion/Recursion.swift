@@ -41,9 +41,18 @@ class Recursion{
         }
         
         if x > list[mid] {
-            return binarySearch(list: Array(list[mid...]), left: mid + 1, right: right, x: x)
+            return binarySearch(list: list, left: mid + 1, right: right, x: x)
         }
         
-        return binarySearch(list: Array(list[0..<mid]), left: left, right: mid - 1, x: x)
+        return binarySearch(list: list, left: left, right: mid - 1, x: x)
+    }
+    
+    
+    ///Fib
+    func fib(value:Int) -> Int{
+        if value == 0 || value == 1{
+            return 1
+        }
+        return fib(value: value - 1) + fib(value: value - 2)
     }
 }
